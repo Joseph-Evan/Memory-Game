@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: greenyellow;
+}
+
+.card {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    backface-visibility: hidden;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 15px;
+    justify-content: center;
+}
+
+
+
+
+h1{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+.front {
+    background-color: green;
+}
+
+.back {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+
+
+
